@@ -133,7 +133,6 @@ public class Dashboard extends AppCompatActivity {
                 // This is the menu item that contains your switch
                 MenuItem item = navigationView.getMenu().findItem(R.id.dark_mode);
                 drawerSwitch = item.getActionView().findViewById(R.id.Switch);
-                //drawerSwitch.setChecked(true);
                 drawerSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                     @Override
                     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

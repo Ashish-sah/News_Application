@@ -9,6 +9,8 @@
     <color name="toolbar_color">#0055FF</color>
     <!--Text color-->
     <color name="text_color">#1F1F20</color>
+    <!--background color-->
+    <color name="background_color">#FFFFFF</color>
 
     <color name="devloper_ScreenColor">#74B9FF</color>
 
