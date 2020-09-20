@@ -19,6 +19,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bestsoft32.tt_fancy_gif_dialog_lib.TTFancyGifDialog;
+import com.bestsoft32.tt_fancy_gif_dialog_lib.TTFancyGifDialogListener;
 import com.google.android.material.navigation.NavigationView;
 
 public class Dashboard extends AppCompatActivity {
@@ -30,6 +32,7 @@ public class Dashboard extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     ActionBarDrawerToggle toggle;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,8 +75,52 @@ public class Dashboard extends AppCompatActivity {
             drawerLayout.closeDrawer(GravityCompat.START);
 
         } else {
-            super.onBackPressed();
+            customDialog();
         }
+    }
+
+    public void customDialog() {
+        new TTFancyGifDialog.Builder(this)
+                .setTitle("Are you sure  want  to Exit this App ? ")
+                .setPositiveBtnText("Exit")
+                .setPositiveBtnBackground("#22b573")
+                .setNegativeBtnText("Cancel")
+                .setNegativeBtnBackground("#c1272d")
+                .setGifResource(R.drawable.tenor)      //pass your gif, png or jpg
+                .isCancellable(true)
+                .OnPositiveClicked(new TTFancyGifDialogListener() {
+                    @Override
+                    public void OnClick() {
+                        finish();
+                    }
+                })
+                .OnNegativeClicked(new TTFancyGifDialogListener() {
+                    @Override
+                    public void OnClick() {
+                    }
+                })
+                .build();
+
+     /*   BottomSheetMaterialDialog mBottomSheetDialog = new BottomSheetMaterialDialog.Builder(this)
+                .setTitle("Delete?")
+                .setMessage("Are you sure want to Exit the App ?")
+                .setCancelable(false)
+                .setPositiveButton("Exit", R.drawable.delete, new BottomSheetMaterialDialog.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+                        finish();
+                    }
+                })
+                .setNegativeButton("Cancel", R.drawable.close, new BottomSheetMaterialDialog.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+                        dialogInterface.dismiss();
+                    }
+                })
+                .build();
+
+        // Show Dialog
+        mBottomSheetDialog.show();     */
     }
 
     private void setupUi() {
