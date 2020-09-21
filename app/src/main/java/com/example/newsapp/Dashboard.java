@@ -101,26 +101,6 @@ public class Dashboard extends AppCompatActivity {
                 })
                 .build();
 
-     /*   BottomSheetMaterialDialog mBottomSheetDialog = new BottomSheetMaterialDialog.Builder(this)
-                .setTitle("Delete?")
-                .setMessage("Are you sure want to Exit the App ?")
-                .setCancelable(false)
-                .setPositiveButton("Exit", R.drawable.delete, new BottomSheetMaterialDialog.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int which) {
-                        finish();
-                    }
-                })
-                .setNegativeButton("Cancel", R.drawable.close, new BottomSheetMaterialDialog.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int which) {
-                        dialogInterface.dismiss();
-                    }
-                })
-                .build();
-
-        // Show Dialog
-        mBottomSheetDialog.show();     */
     }
 
     private void setupUi() {
