@@ -65,6 +65,7 @@
             android:layout_marginTop="25dp"
             android:fontFamily="@font/pacifico"
             android:text="About  Developer"
+            android:textColor="?attr/textColor"
             android:textAlignment="center"
             android:textSize="30dp" />
 
@@ -74,9 +75,9 @@
             android:layout_marginTop="25dp"
             android:fontFamily="@font/gochi_hand"
             android:padding="15dp"
+            android:textColor="?attr/textColor"
             android:text="@string/About_Developer"
             android:textAlignment="center"
-            android:textColor="@color/text_color"
             android:textSize="20dp" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -85,6 +86,7 @@
             android:layout_marginTop="25dp"
             android:fontFamily="@font/pacifico"
             android:text="About   App"
+            android:textColor="?attr/textColor"
             android:textAlignment="center"
             android:textSize="30dp" />
 
@@ -94,9 +96,9 @@
             android:layout_marginTop="25dp"
             android:fontFamily="@font/gochi_hand"
             android:padding="15dp"
+            android:textColor="?attr/textColor"
             android:text="@string/About_App"
             android:textAlignment="center"
-            android:textColor="@color/text_color"
             android:textSize="20dp" />
 
     </LinearLayout>

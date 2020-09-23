@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
+    android:background="?attr/backgroundColor"
     tools:context=".Dashboard"
     tools:openDrawer="start">
 
@@ -20,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@color/toolbar_color"
-            app:titleTextColor="@color/text_color" />
+            app:titleTextColor="?attr/textColor" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/Recycler_View"
@@ -42,6 +43,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/header"
+        android:background="?attr/backgroundColor"
+        app:itemTextColor="?attr/textColor"
         app:menu="@menu/menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

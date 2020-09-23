@@ -7,10 +7,5 @@
     <color name="front_Screen_background_color">#00B0FF</color>
     <!--Toolbar color-->
     <color name="toolbar_color">#0055FF</color>
-    <!--Text color-->
-    <color name="text_color">#1F1F20</color>
-    <!--background color-->
-    <color name="background_color">#FFFFFF</color>
-    <!--developer Screen color-->
     <color name="devloper_ScreenColor">#74B9FF</color>
 </resources>

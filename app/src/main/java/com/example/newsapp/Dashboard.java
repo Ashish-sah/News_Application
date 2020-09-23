@@ -3,15 +3,12 @@ package com.example.newsapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.CompoundButton;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
@@ -28,14 +25,20 @@ public class Dashboard extends AppCompatActivity {
     ActionBar actionBar;
     NavigationView navigationView;
     DrawerLayout drawerLayout;
-    SwitchCompat drawerSwitch;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     ActionBarDrawerToggle toggle;
-
+    DayNightPreference dayNightPreference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Making object of class   dayNightPreference
+        dayNightPreference = new DayNightPreference(this);
+        //changing the theme when enabled
+        if (dayNightPreference.loadNightModeState()) {
+            setTheme(R.style.darkTheme);
+        } else
+            setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         //Code to hide the status bar
@@ -127,14 +130,8 @@ public class Dashboard extends AppCompatActivity {
     //with this method menu icon is clickable and function
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        //with this method menu icon is clickable
-        navigationView.setCheckedItem(R.id.Switch);
-        navigationView.getMenu().performIdentifierAction(R.id.Switch, 0);
-        if (toggle.onOptionsItemSelected(item)) {
-            return true;
-        } else {
             return super.onOptionsItemSelected(item);
-        }
+
     }
 
     private void setupNavigationView() {
@@ -157,21 +154,12 @@ public class Dashboard extends AppCompatActivity {
                 break;
             }
             case R.id.dark_mode: {
-                // This is the menu item that contains your switch
-                MenuItem item = navigationView.getMenu().findItem(R.id.dark_mode);
-                drawerSwitch = item.getActionView().findViewById(R.id.Switch);
-                drawerSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                    @Override
-                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                        if (isChecked) {
-                            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                            Toast.makeText(getApplicationContext(), "Switch turned on", Toast.LENGTH_SHORT).show();
-                        } else {
-                            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                            Toast.makeText(getApplicationContext(), "Switch turned off", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+                //code for setting dark mode
+                //true for dark mode, false for day mode, currently toggling on each click
+                // DayNightPreference dayNightPreference=new DayNightPreference(this);
+                dayNightPreference.setNightModeState(!dayNightPreference.loadNightModeState());
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                restartApp();
                 break;
             }
             case R.id.share: {
@@ -186,5 +174,13 @@ public class Dashboard extends AppCompatActivity {
                 break;
             }
         }
+
     }
+
+    public void restartApp() {
+        Intent i = new Intent(getApplicationContext(), Dashboard.class);
+        startActivity(i);
+        finish();
+    }
+
 }
