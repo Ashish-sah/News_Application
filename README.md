@@ -3,10 +3,16 @@ An android Application which shows news
 
 # Features
  * Implementation of Day/Night theme
- * Fetch data using the Volley  library
+ * Using the Volley  library for networking
  * Uses Lottie Animation to view Animated images
- * Implementation of Recycler view
-
+ * Implementation of Recycler view'
+ * Implementation of TTFancyGifDialog (A Beautiful Dialogs Library for Android)
+ 
+# Prerequisites
+  -Android Studio
+  -Knowledge of java
+  -Mobile Phone
+  That's it
 
 ## Built With Love
 * Android Studio
