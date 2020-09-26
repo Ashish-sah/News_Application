@@ -2,6 +2,7 @@
     <!-- Day /Light application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -10,6 +11,12 @@
         <item name="backgroundColor">#ffffff</item>
         <item name="android:windowAnimationStyle">@style/WindowAnimationTransation</item>
     </style>
+
+    <!-- Toolbar theme land-->
+    <!--style name="ToolbarThemeLand" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:fontFamily">@font/gochi_hand</item>
+        <item name="android:textSize">50sp</item>
+    </style-->
     <!-- Night /Dark application theme. -->
     <style name="darkTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->

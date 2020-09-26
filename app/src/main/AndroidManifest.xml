@@ -11,10 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".About_Developer_activity" />
-        <activity android:name=".news_Explorer" />
+        <activity
+            android:name=".About_Developer_activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".news_Explorer"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
         <activity android:name=".Dashboard" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

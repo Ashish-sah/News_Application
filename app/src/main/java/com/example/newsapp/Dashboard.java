@@ -48,6 +48,7 @@ public class Dashboard extends AppCompatActivity {
         //set toolbar as action bar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         // getSupportActionBar().setDisplayShowHomeEnabled(true);
         //handler
         recyclerView = findViewById(R.id.Recycler_View);
