@@ -8,12 +8,16 @@ An android Application which shows news
  * Implementation of Recycler view'
  * Implementation of TTFancyGifDialog (A Beautiful Dialogs Library for Android)
  
-# Prerequisites
-  -Android Studio
-  -Knowledge of java
-  -Mobile Phone
-  That's it
-
+ ## Application ScreenShots
+ 
+ # Prerequisites
+ ```
+  - Android Studio
+  - Knowledge of java
+  - Mobile Phone
+   That's it
+ ```
+ 
 ## Built With Love
 * Android Studio
 * Java
