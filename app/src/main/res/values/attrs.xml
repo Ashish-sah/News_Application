@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--Text color>
-<color name="text_color">#1F1F20</color-->
-    <!--background color>
-    <color name="background_color">#FFFFFF</color-->
 
     <declare-styleable name="ds">
         <attr name="textColor" format="color" />
