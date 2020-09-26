@@ -1,6 +1,11 @@
 # News Application
 An android Application which shows news
 
+# Features
+ * Implementation of Day/Night theme
+ * Fetch data using the Volley  library
+ * Uses Lottie Animation to view Animated images
+ * Implementation of Recycler view
 
 
 ## Built With Love
