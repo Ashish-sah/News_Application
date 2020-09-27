@@ -32,10 +32,6 @@
             android:padding="10dp"
             android:scrollbars="vertical" />
 
-        <com.google.android.material.navigation.NavigationView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -48,5 +44,4 @@
         app:itemTextColor="?attr/textColor"
         app:itemIconSize="@dimen/_20sdp"
         app:menu="@menu/menu" />
-
 </androidx.drawerlayout.widget.DrawerLayout>
