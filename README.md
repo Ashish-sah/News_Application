@@ -10,6 +10,9 @@ An android Application which shows news
  
  # Application ScreenShots
    <abc><img src="Screen Shots/image (1).jpg" width=250></abc>
+   <abc><img src="Screen Shots/image (2).jpg" width=250></abc>
+   <abc><img src="Screen Shots/image (3).jpg" width=250></abc>
+
  # Prerequisites
  ```
   - Android Studio
