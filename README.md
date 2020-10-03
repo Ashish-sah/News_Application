@@ -1,4 +1,4 @@
-<img align="right" alt="GIF"  width="150px" src="https://www.animatedimages.org/data/media/152/animated-newspaper-image-0024.gif" />
+<img align="right" alt="GIF"  width="370px" src="Screen Shots/news.gif" />
 
 # News Application
 An android Application which shows news
