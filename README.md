@@ -8,8 +8,8 @@ An android Application which shows news
  * Implementation of Recycler view'
  * Implementation of TTFancyGifDialog (A Beautiful Dialogs Library for Android)
  
- ## Application ScreenShots
- 
+ # Application ScreenShots
+   <abc><img src="Screen Shots/image (1).jpg"width=250></abc>
  # Prerequisites
  ```
   - Android Studio
