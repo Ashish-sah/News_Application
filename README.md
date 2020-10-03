@@ -1,3 +1,5 @@
+<img align="right" alt="GIF"  width="370px" src="https://miro.medium.com/max/1600/0*K2WLMTExLyida7OR.gif" />
+
 # News Application
 An android Application which shows news
 
@@ -27,7 +29,11 @@ An android Application which shows news
 
 ## Contributing
 
-All contributions  are welcomed .
+All contributions are welcomed .
 
 ## Author
-* **Ashish Sah** - https://www.linkedin.com/in/ashish-sah-943171160/
+
+* **Ashish Sah** <a href="https://www.linkedin.com/in/ashish-sah-943171160/">
+  <img align="left" alt="Ashish LinkdeIN" width="22px" height="18px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
+</a>
+
